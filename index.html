@@ -21,7 +21,7 @@
 
         body
     {
-        background-color: #ffeaa7;
+        background-color: #f8c291;
     }
       </style>
    
@@ -34,7 +34,7 @@
     
     
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-info ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary ">
             <a class="navbar-brand" href="#">Hello</a>
             <!--Comando para gerar o menu devido a responsividade -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -48,13 +48,13 @@
                 </li>
     
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Sobre</a>
+                  <a class="nav-link text-light" href="#sobres">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#cards">Card</a>
+                    <a class="nav-link text-light" href="#produtos">Produtos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Contato</a>
+                    <a class="nav-link text-light" href="#contatos">Contato</a>
                   </li>
     
                   <li class="nav-item dropdown">
@@ -114,17 +114,17 @@
     <!--/Carrosel-->
     <div class="container ">
     <!--jumbotron-->
-    <div class="jumbotron jumbotron-fluid mt-5 " id="cards" >
+    <div class="jumbotron jumbotron-fluid mt-5 " id="sobres" >
         <div class="container">
-          <h1 class="display-4">Cards</h1>
-          <p class="lead">Sessão separada para apresentar os nossos modelos disponiveis</p>
+          <h1 class="display-4">Quem somos</h1>
+          <p class="lead">Durante a quarentena, decidimos nos jogar numa experiência nova. Tínhamos acabado de realizar um bazar com nossas roupas onde o retorno foi fantástico e não queríamos perder a onda. Assim começamos a loja com a cara e a coragem. Preferimos não focar na estética do negócio naquele momento, por isso o nome da loja permaneceu sendo o mesmo do bazar que havíamos feito. Mas agora entendemos que é o momento ideal para o novo.</p>
         </div>
       </div>
       <!--/jumbotron-->
 
     <!--Cards-->
    
-    <div class="card-deck">
+    <div class="card-deck" id="produtos">
         <div class="card">
           <img class="card-img-top" src="assets/imagens/image1.jpeg" alt="Imagem de capa do card">
           <div class="card-body">
@@ -134,7 +134,7 @@
                 
           </div>
           <div class="card-footer">
-            <small class="text-muted">Atualizados 3 minutos atrás</small>
+      
           </div>
         </div>
         <div class="card">
@@ -143,14 +143,14 @@
             <h5 class="card-title">t-shirt</h5>
             <p class="card-text">
                 <ul>
-                    <li>T-shirt Stay True - 45,00 (P/M/G)</li>
+                    <li>T-shirt Stay True (P/M/G)</li>
                     <li>Débito, crédito e transferência bancária</li>
-                    <li>•Entregamos para todo o Brasil ✈️</li>
+                    <li>Entregamos para todo o Brasil ✈️</li>
                 </ul>
             </p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Atualizados 3 minutos atrás</small>
+            
           </div>
         </div>
         <div class="card">
@@ -160,7 +160,7 @@
             <p class="card-text">Mais detalhes ✨Dessa T-Shirt rosa bebê que a gente ama ✨</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Atualizados 3 minutos atrás</small>
+            
           </div>
         </div>
       </div>
@@ -168,7 +168,7 @@
       <!--video-->
       <div class="row mt-5 mb-5">
           <div class="col-md-8">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae hic voluptatem. Architecto, consequuntur! In, eaque? Illum itaque, laborum voluptate adipisci vitae ipsam facere praesentium debitis numquam expedita placeat. Nobis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo culpa, ad quod autem labore deserunt expedita laborum tempore voluptatem dolorum ullam animi et nobis delectus iste dolorem, minima amet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum fugiat voluptatibus minima. Et dolores nostrum fugiat eligendi minus ea in quasi qui amet porro, laudantium id repellat, ut expedita. Optio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus magni temporibus ab, illo nam optio unde esse reprehenderit, doloremque veritatis impedit quod velit laborum ea sit, placeat tempora accusantium quasirem, minima amet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum fugiat voluptatibus minima. Et dolores nostrum fugiat eligendi minus ea in quasi qui amet porro, laudantium id repellat, ut expedita. Optio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus magni temporibus ab, illo nam optio unde esse reprehenderit, doloremque veritatis impedit quod velit laborum ea sit, placeat tempora accusantium quasi.</p>
+              <p></p>
           </div>
           <div class="col-md-4 d-flex justify-content-center">
               <video class="w-75" muted loop controls autoplay >
@@ -180,7 +180,7 @@
 
       <!--Formulario de Contato-->
 
-      <div class="row mb-5">
+      <div class="row mb-5" id="contatos">
           <div class="col md-12 ">
               <h3 class="text-center">
                   Contate-nos
@@ -192,22 +192,26 @@
       <div class="row row d-flex align-items-center">
         <div class="col md-6">
             <form>
+              
                 <div class="form-group">
-                  <label for="exampleFormControlInput1">Endereço de email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-                </div>
-                
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Nome</label>
-                    <input type="nome" class="form-control" id="exampleFormControlInput1" placeholder="nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="nome" onkeyup='validaNome()'>
+                    <div id='txtNome'></div>
                   </div>
+
+                  <div class="form-group">
+                    <label for="email">Endereço de email</label>
+                    <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" onkeyup='validaEmail()'>
+                    <div id='txtEmail'></div>
+                  </div >
                 
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Texto</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <label for="texto">Texto</label>
+                  <textarea name="texto" class="form-control" id="texto" rows="3" onkeyup='validaTexto()'></textarea>
+                  <div id= 'txtTexto'></div>
                 </div>
                 <div class="form-group d-flex justify-content-end">
-                    <button class="btn btn-outline-success">Enviar</button>
+                    <button class="btn btn-outline-success" onclick="enviar()">Enviar</button>
                 </div>
               </form>
             
@@ -218,7 +222,7 @@
 
         </div>
     </div>
-    <!--/Formulario de Conato-->
+    <!--/Formulario de Contato-->
 
     <hr>
       <!--Footer-->
@@ -248,6 +252,7 @@
        
     </div>
 
+    <script src="assets/js/scriptss.js"></script>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

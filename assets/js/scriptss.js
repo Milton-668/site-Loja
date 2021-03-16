@@ -25,10 +25,10 @@
 let nome = window.document.getElementById('nome')
 // chamo o id do e-mail por #
 let email = document.querySelector('#email')
-let assunto = document.querySelector('#assunto')
+let texto = document.querySelector('#texto')
 let nomeOk= false
 let emailOk= false
-let assuntoOk= false
+let textoOk= false
 let mapa = document.querySelector('#mapa')
 
 nome.style.width = '100%'
@@ -66,22 +66,22 @@ function validaEmail(){
     }
 }
 
-function validaAssunto(){
-    let txtAssunto = document.querySelector('#txtAssunto')
+function validaTexto(){
+    let txtTexto = document.querySelector('#txtTexto')
 
-    if (assunto.value.length >100)
+    if (texto.value.length >100)
     {
-        txtAssunto.innerHTML='Ultrapassa 100 caracteres '
-        txtAssunto.style.color = 'yellow'
+        txtTexto.innerHTML='Ultrapassa 100 caracteres '
+        txtTexto.style.color = 'yellow'
     }
     else{
-        txtAssunto.style.display= 'none'
-        assuntoOk=true
+        txtTexto.style.display= 'none'
+        textoOk=true
     }
 }
 
 function enviar(){
-    if(nomeOk==true  && emailOk==true && assuntoOk==true ){
+    if(nomeOk==true  && emailOk==true && textoOk==true ){
         alert('Formulario enviado com sucesso!')
     }
     else{
