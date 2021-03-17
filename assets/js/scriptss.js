@@ -40,7 +40,7 @@ function validaNome() {
     if (nome.value.length <3)
     {
         txtNome.innerHTML='Nome inválido'
-        txtNome.style.color = "yellow"
+        txtNome.style.color = "red"
     }
     else
     {
@@ -56,7 +56,7 @@ function validaEmail(){
     if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1)
     {
         txtEmail.innerHTML='E-mail inválido'
-        txtEmail.style.color = "yellow"
+        txtEmail.style.color = "red"
     }
     else
     {
@@ -72,7 +72,7 @@ function validaTexto(){
     if (texto.value.length >100)
     {
         txtTexto.innerHTML='Ultrapassa 100 caracteres '
-        txtTexto.style.color = 'yellow'
+        txtTexto.style.color = 'red'
     }
     else{
         txtTexto.style.display= 'none'
